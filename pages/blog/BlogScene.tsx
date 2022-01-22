@@ -10,12 +10,17 @@ import FooterComponent from "../../Components/Layout/Footer/FooterComponent";
 const AboutUsScene = () => {
   const [data, setData] = useState();
   const router = useRouter();
-  useEffect(async () => {
-    const resp = await axios.get(
-      "https://ravitrivedi.sandeepmehta1.repl.co/getblog"
-    );
+  useEffect(() => {
+    (async () => {
+      const resp = await axios.get(
+        "https://ravitrivedi.sandeepmehta1.repl.co/getblog"
+      );
 
-    if (resp.status === 201) setData(resp?.data?.blogs);
+      if (resp.status === 201) {
+        setData(resp?.data?.blogs);
+      }
+    })();
+
     return () => {};
   }, [data]);
   return (
@@ -70,7 +75,9 @@ const AboutUsScene = () => {
                         border: "none",
                         marginTop: "1rem",
                       }}
-                      onClick={() =>router.push(`/blog/${blog._id}/?blog=${blog._id}`)}
+                      onClick={() =>
+                        router.push(`/blog/${blog._id}/?blog=${blog._id}`)
+                      }
                     >
                       Read More
                     </button>{" "}
