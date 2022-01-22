@@ -52,7 +52,7 @@ const ChatBotHelper = () => {
       id: "5",
       message: "How old are you?",
       user: true,
-      validator: (value: number) => {
+      validator: (value) => {
         if (isNaN(value)) {
           return "value must be a number";
         } else if (value < 0) {
