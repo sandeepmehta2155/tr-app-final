@@ -2,16 +2,6 @@ import React from "react";
 import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
 
-const BotRedirect = ({ url, message }) => {
-  return (
-    <div>
-      <a href={url} target="_blank">
-        {message}
-      </a>
-    </div>
-  );
-};
-
 const CHATBOT_THEME = {
   background: "#FFFEFC",
   fontFamily: "Roboto",
