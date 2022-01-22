@@ -1,3 +1,6 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import HeaderComponent from "../../Components/Layout/Header/HeaderComponent";
@@ -8,7 +11,7 @@ import axios from "axios";
 import FooterComponent from "../../Components/Layout/Footer/FooterComponent";
 // https://replit.com/@sandeepmehta215/productSeller#auth.js
 const AboutUsScene = () => {
-  const [data, setData] = useState();
+  const [data, setData] = useState<any>();
   const router = useRouter();
   useEffect(() => {
     (async () => {
@@ -56,7 +59,7 @@ const AboutUsScene = () => {
           className="d-flex flex-wrap justify-content-between"
         >
           {data && data.length > 0 ? (
-            data.map((blog) => {
+            data.map((blog: { imageurl: string | undefined; heading: boolean | React.ReactChild | React.ReactFragment | React.ReactPortal | null | undefined; description: string | any[]; _id: any; }) => {
               return (
                 <>
                   <span style={{}}>
