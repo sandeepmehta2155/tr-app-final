@@ -1,8 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import HomeScene from "./Home";
-import { Carousel } from "react-bootstrap";
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
 
 const responsive = {
   0: { items: 1 },
@@ -10,8 +11,8 @@ const responsive = {
   1024: { items: 3 },
 };
 
-const handleDragStart = (e) => e.preventDefault();
-const Item = ({ image, title }) => (
+const handleDragStart = (e: any) => e.preventDefault();
+const Item = ({ image, title }: any) => (
   <>
     <img
       onDragStart={handleDragStart}
@@ -20,24 +21,64 @@ const Item = ({ image, title }) => (
       alt={title}
     />
     <div
-      style={{ color: "white", backgroundColor: "black" , padding:"1rem"}}
-      className="p-10 m-10 text-center"
+      style={{ color: "white", backgroundColor: "black", padding: "1rem" }}
+      className="text-center"
     >
       <strong>{title}</strong>
     </div>
   </>
 );
 
+function SampleNextArrow(props: any) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        background: "black",
+        padding: "1rem",
+        width: "3.2rem",
+        height: "3.2rem",
+        textAlign: "center",
+      }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props: any) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        zIndex: 10,
+        background: "black",
+        padding: "1rem",
+        width: "3.2rem",
+        height: "3.2rem",
+      }}
+      onClick={onClick}
+    />
+  );
+}
 
 const HomeBottomCarousel = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+  };
   return (
-      <AliceCarousel
-        autoWidth
-        touchTracking
-        mouseTracking
-        infinite={false}
-        responsive={responsive}
-      >
+    <>
+      <Slider {...settings}>
         <Item
           title="CAREER GUIDELINES"
           image="https://trivediravi.com/wp-content/uploads/2020/04/career-home.png"
@@ -58,7 +99,8 @@ const HomeBottomCarousel = () => {
           title="COMMERCIAL VASTU"
           image="https://trivediravi.com/wp-content/uploads/2020/04/vastu-home.png"
         />
-      </AliceCarousel>
+      </Slider>
+    </>
   );
 };
 
