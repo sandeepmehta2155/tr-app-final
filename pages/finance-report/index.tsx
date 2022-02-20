@@ -2,19 +2,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import FooterComponent from '../../Components/Layout/Footer/FooterComponent';
 import HeaderComponent from '../../Components/Layout/Header/HeaderComponent';
-import horoscopeStyles from './horoscope.module.scss';
+import financeStyles from './finance-report.module.scss';
 
-const horoscope = () => {
+const financereport = () => {
   return (
     <div>
       <HeaderComponent />
-      <div className={horoscopeStyles.astPagetitle}>
-        <div className={horoscopeStyles.astImgOverlay}></div>
+      <div className={financeStyles.astPagetitle}>
+        <div className={financeStyles.astImgOverlay}></div>
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12">
-              <div className={horoscopeStyles.pageTitle}>
-                <h1>Horoscope</h1>
+              <div className={financeStyles.pageTitle}>
+                <h1>Finance Report</h1>
               </div>
             </div>
             <div className="col-lg-12 col-md-12 col-sm-12">
@@ -24,29 +24,24 @@ const horoscope = () => {
                 </li>
                 <li>//</li>
                 <li>
-                  <a href="#">Horoscope</a>
+                  <a href="#">Finance Report</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <div className={horoscopeStyles.astVastuWrapper}>
+      <div className={financeStyles.astVastuWrapper}>
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div className={horoscopeStyles.astVastuInfo}>
+              <div className={financeStyles.astVastuInfo}>
                 <p className="inner-text">
-                  Your birth date, time and place are a divine code of your
-                  destiny and It is coded by divine power. Trivedi Raviji is
-                  expert to decode it and can guide you for better life. The
-                  horoscope is normally used to forecast your future with
-                  respect to achievement and events. For example, education
-                  level, marriage life, career guide, wealth status, health
-                  matters and many more affairs too.
+                  Trivedi Ravji is best astrologer to predict about your company growth or individual growth on financial front. He predicted about financial growth or obstacle on monthly and yearly basis. Trivedi Raviji is expert to give advice astrologically and or vastu shastr base to get payment recovery.
                 </p>
-                <div className={horoscopeStyles.cta}>
-                  <h4>Get Sample Horoscope Report</h4>
+                <div className={financeStyles.cta}>
+                  <h4>Get Sample Finance Report
+                  </h4>
                   <a
                     href="https://trivediravi.com/wp-content/uploads/2020/03/Career-future-Reports.pdf"
                     className="su-button su-button-style-soft"
@@ -54,14 +49,15 @@ const horoscope = () => {
                     title="Horoscope Report Sample"
                     download="Horoscope Sample Report"
                   >
-                    <button className={horoscopeStyles.downloadBtn}>
+                    <button className={financeStyles.downloadBtn}>
                       <FontAwesomeIcon icon={['fas', 'phone-volume']} />{' '}
                       Download Now
                     </button>
                   </a>
                 </div>
-                <h2 className={horoscopeStyles.reportTitle}>
-                  Get Horoscope Report
+                <h2 className={financeStyles.reportTitle}>
+                  Get Your Finance Report
+
                 </h2>
                 <div className="ast_journal_box_wrapper">
                   <div
@@ -79,7 +75,7 @@ const horoscope = () => {
                     <form
                       action="/horoscope/#wpcf7-f342-p316-o2"
                       method="post"
-                      className={horoscopeStyles.formWrapper}
+                      className={financeStyles.formWrapper}
                       encType="multipart/form-data"
                     >
                       <div style={{ display: "none" }}>
@@ -279,7 +275,7 @@ const horoscope = () => {
                           </span>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                          <label>Upload Your Kundali</label>
+                          <label>Upload Your Document</label>
                           <br />
                           <span className="wpcf7-form-control-wrap kundali">
                             <input
@@ -297,7 +293,7 @@ const horoscope = () => {
                       <div className="clearfix"></div>
                       <hr />
                       <h3 style={{ textAlign: "center", fontSize: "24px" }}>
-                        Payment: INR 499*
+                        Payment: INR 1499*
                       </h3>
                       <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 payment-div">
@@ -307,9 +303,9 @@ const horoscope = () => {
                             Select Mode of Payment
                           </label>
                           <br />
-                          <span className={horoscopeStyles.wrapPayment}>
+                          <span className={financeStyles.wrapPayment}>
                             <span className="wpcf7-form-control wpcf7-radio">
-                              <span className={horoscopeStyles.formList}>
+                              <span className={financeStyles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -320,7 +316,7 @@ const horoscope = () => {
                                   Banking/Cash Cards
                                 </span>
                               </span>
-                              <span className={horoscopeStyles.formList}>
+                              <span className={financeStyles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -330,7 +326,7 @@ const horoscope = () => {
                                   NEFT (National Electronic Fund Transfer)
                                 </span>
                               </span>
-                              <span className={horoscopeStyles.formList}>
+                              <span className={financeStyles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -340,7 +336,7 @@ const horoscope = () => {
                                   PAYTM / BHIM UPI
                                 </span>
                               </span>{" "}
-                              <span className={horoscopeStyles.formList}>
+                              <span className={financeStyles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -360,7 +356,7 @@ const horoscope = () => {
                             </span>
                           </span>
                           <br />
-                          <span className={horoscopeStyles.bankDetails}>
+                          <span className={financeStyles.bankDetails}>
                             <br />
                             SBI Bank A/C No: 30876664155
                             <br />
@@ -377,7 +373,7 @@ const horoscope = () => {
                         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                           <img
                             src="https://trivediravi.com/wp-content/uploads/2020/04/scanner.png"
-                            className={horoscopeStyles.paymentImg}
+                            className={financeStyles.paymentImg}
                             alt="payment"
                             title="payment"
                           />
@@ -387,7 +383,7 @@ const horoscope = () => {
                         <input
                           type="submit"
                           value="Send"
-                          className={`${horoscopeStyles.submitBtn} wpcf7-form-control wpcf7-submit asn_btn pull-right w-100`}
+                          className={`${financeStyles.submitBtn} wpcf7-form-control wpcf7-submit asn_btn pull-right w-100`}
                         />
                       </div>
                       <div
@@ -407,4 +403,4 @@ const horoscope = () => {
     </div>
   );
 }
-export default horoscope;
+export default financereport;

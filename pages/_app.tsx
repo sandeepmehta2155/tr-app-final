@@ -7,6 +7,7 @@ import {
   faMapMarkerAlt,
   faPhoneAlt,
   faPhoneVolume,
+  faDownload
 } from "@fortawesome/free-solid-svg-icons";
 import React, { Component } from "react";
 import Chatbot from "./Chatbot";
@@ -17,7 +18,8 @@ library.add(
   faAt,
   faPhoneAlt,
   faEnvelopeOpen,
-  faMapMarkerAlt
+  faMapMarkerAlt,
+  faDownload
 );
 
 const MyApp = ({ Component, pageProps }: any) => (

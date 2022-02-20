@@ -38,6 +38,12 @@ color: #ffad29 !important;
 .f-14 {
   font-size: 14px !important;
 }
+.f-16 {
+  font-size: 16px !important;
+}
+.f-18 {
+  font-size: 18px !important;
+}
 //Header CSS Start //
 .ast_menu ul {
   float: right;
@@ -94,4 +100,26 @@ select {
     border-radius: 3px;
     padding: 0px 10px;
     outline: none;
+}
+
+.ast_btn {
+  display: inline-block;
+  height: 45px;
+  line-height: 43px;
+  padding: 0px 20px;
+  min-width: 130px;
+  background-color: #ffad29;
+  color: #ffffff;
+  text-transform: capitalize;
+  border: 1px solid #ffad29;
+  border-radius: 3px;
+  text-align: center;
+  transition: all 0.5s;
+  &:hover {
+    background-color: transparent;
+    color: #ffad29;
+    border: 1px solid #ffad29;
+    outline: none;
+    box-shadow: none;
+  }
 }

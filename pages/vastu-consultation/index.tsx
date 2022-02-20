@@ -2,19 +2,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import FooterComponent from '../../Components/Layout/Footer/FooterComponent';
 import HeaderComponent from '../../Components/Layout/Header/HeaderComponent';
-import horoscopeStyles from './horoscope.module.scss';
+import vastuStyles from './vastu-consultation.module.scss';
 
-const horoscope = () => {
+const vastuconsultation = () => {
   return (
     <div>
       <HeaderComponent />
-      <div className={horoscopeStyles.astPagetitle}>
-        <div className={horoscopeStyles.astImgOverlay}></div>
+      <div className={vastuStyles.astPagetitle}>
+        <div className={vastuStyles.astImgOverlay}></div>
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12">
-              <div className={horoscopeStyles.pageTitle}>
-                <h1>Horoscope</h1>
+              <div className={vastuStyles.pageTitle}>
+                <h1>Vastu Shastra</h1>
               </div>
             </div>
             <div className="col-lg-12 col-md-12 col-sm-12">
@@ -24,44 +24,43 @@ const horoscope = () => {
                 </li>
                 <li>//</li>
                 <li>
-                  <a href="#">Horoscope</a>
+                  <a href="#">Vastu Shastra</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <div className={horoscopeStyles.astVastuWrapper}>
+      <div className={vastuStyles.astVastuWrapper}>
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div className={horoscopeStyles.astVastuInfo}>
+              <div className={vastuStyles.astVastuInfo}>
                 <p className="inner-text">
-                  Your birth date, time and place are a divine code of your
-                  destiny and It is coded by divine power. Trivedi Raviji is
-                  expert to decode it and can guide you for better life. The
-                  horoscope is normally used to forecast your future with
-                  respect to achievement and events. For example, education
-                  level, marriage life, career guide, wealth status, health
-                  matters and many more affairs too.
+                  Vastu means the site which is useful to live. Vastu shastra (vāstu śāstra) is a traditional Indian system which is science of architecture. Basically, it is principles of design, layout, measurements, ground preparation, space arrangement, and spatial geometry. Vastu shastra is described to maintain site with pancha tatve- elements. The flats, tenement, plot, office, factory, industries are improved with balancing five elements like agny-fire, Pruthvi-Earth, Vayu-air, Jal-water and akash-space. Trivedi Ravi is modern vastu expert and can provide solution-correction in site with and without restructure. He is expert to create environment in site to achieve individual goal.
                 </p>
-                <div className={horoscopeStyles.cta}>
-                  <h4>Get Sample Horoscope Report</h4>
-                  <a
-                    href="https://trivediravi.com/wp-content/uploads/2020/03/Career-future-Reports.pdf"
-                    className="su-button su-button-style-soft"
-                    target="_self"
-                    title="Horoscope Report Sample"
-                    download="Horoscope Sample Report"
-                  >
-                    <button className={horoscopeStyles.downloadBtn}>
-                      <FontAwesomeIcon icon={['fas', 'phone-volume']} />{' '}
-                      Download Now
-                    </button>
-                  </a>
+                <p>Here, various Vastu reports provided for your reference.</p>
+                <div className='row'>
+                  <div className='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+                    <img src="https://trivediravi.com/wp-content/uploads/2020/03/vastu2.png" alt="vastu 1" title="vastu 1" width="300" height="300" className="alignnone size-full wp-image-273" srcSet="https://trivediravi.com/wp-content/uploads/2020/03/vastu2.png 300w, https://trivediravi.com/wp-content/uploads/2020/03/vastu2-150x150.png 150w, https://trivediravi.com/wp-content/uploads/2020/03/vastu2-100x100.png 100w" sizes="(max-width: 300px) 100vw, 300px" />
+                  </div>
+                  <div className='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+                    <img src="https://trivediravi.com/wp-content/uploads/2020/03/vastu1.png" alt="vastu 2" title="vastu 2" width="300" height="297" className="alignnone size-full wp-image-274" srcSet="https://trivediravi.com/wp-content/uploads/2020/03/vastu1.png 300w, https://trivediravi.com/wp-content/uploads/2020/03/vastu1-150x150.png 150w, https://trivediravi.com/wp-content/uploads/2020/03/vastu1-100x100.png 100w" sizes="(max-width: 300px) 100vw, 300px" />
+                  </div>
+                  <div className='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+                    <p>During Vastu consultation our Expert Mr. Trivedi Ravi provides necessary details pertaining to site, plot, soil etc with full scrutiny and examination. In the past 6 years he has been providing this service with full dedication without any profit motive. E-reports are sent through e-mail for easy accessibility which also saves time and money. Here you can download Vastu Report:</p>
+                    <div>
+                      <a href="https://trivediravi.com/wp-content/uploads/2020/03/Business-Vastu-Report.pdf" className={vastuStyles.downloadBtn} target="_self" title="Download Sample Report" download="Vastu Report">
+                        <span>
+                          <FontAwesomeIcon
+                            icon={["fas", "download"]}
+                          />{" "} Download Sample Report</span></a></div>
+                  </div>
                 </div>
-                <h2 className={horoscopeStyles.reportTitle}>
-                  Get Horoscope Report
+                <img src="/assets/steps.png" alt="" className='w-100' />
+                <h2 className={vastuStyles.reportTitle}>
+                  Get Your Vastu Report
+
                 </h2>
                 <div className="ast_journal_box_wrapper">
                   <div
@@ -79,7 +78,7 @@ const horoscope = () => {
                     <form
                       action="/horoscope/#wpcf7-f342-p316-o2"
                       method="post"
-                      className={horoscopeStyles.formWrapper}
+                      className={vastuStyles.formWrapper}
                       encType="multipart/form-data"
                     >
                       <div style={{ display: "none" }}>
@@ -279,7 +278,7 @@ const horoscope = () => {
                           </span>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                          <label>Upload Your Kundali</label>
+                          <label>Upload Your Floor Plan</label>
                           <br />
                           <span className="wpcf7-form-control-wrap kundali">
                             <input
@@ -297,7 +296,7 @@ const horoscope = () => {
                       <div className="clearfix"></div>
                       <hr />
                       <h3 style={{ textAlign: "center", fontSize: "24px" }}>
-                        Payment: INR 499*
+                        Payment: INR 7500*
                       </h3>
                       <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 payment-div">
@@ -307,9 +306,9 @@ const horoscope = () => {
                             Select Mode of Payment
                           </label>
                           <br />
-                          <span className={horoscopeStyles.wrapPayment}>
+                          <span className={vastuStyles.wrapPayment}>
                             <span className="wpcf7-form-control wpcf7-radio">
-                              <span className={horoscopeStyles.formList}>
+                              <span className={vastuStyles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -320,7 +319,7 @@ const horoscope = () => {
                                   Banking/Cash Cards
                                 </span>
                               </span>
-                              <span className={horoscopeStyles.formList}>
+                              <span className={vastuStyles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -330,7 +329,7 @@ const horoscope = () => {
                                   NEFT (National Electronic Fund Transfer)
                                 </span>
                               </span>
-                              <span className={horoscopeStyles.formList}>
+                              <span className={vastuStyles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -340,7 +339,7 @@ const horoscope = () => {
                                   PAYTM / BHIM UPI
                                 </span>
                               </span>{" "}
-                              <span className={horoscopeStyles.formList}>
+                              <span className={vastuStyles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -360,7 +359,7 @@ const horoscope = () => {
                             </span>
                           </span>
                           <br />
-                          <span className={horoscopeStyles.bankDetails}>
+                          <span className={vastuStyles.bankDetails}>
                             <br />
                             SBI Bank A/C No: 30876664155
                             <br />
@@ -377,7 +376,7 @@ const horoscope = () => {
                         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                           <img
                             src="https://trivediravi.com/wp-content/uploads/2020/04/scanner.png"
-                            className={horoscopeStyles.paymentImg}
+                            className={vastuStyles.paymentImg}
                             alt="payment"
                             title="payment"
                           />
@@ -387,7 +386,7 @@ const horoscope = () => {
                         <input
                           type="submit"
                           value="Send"
-                          className={`${horoscopeStyles.submitBtn} wpcf7-form-control wpcf7-submit asn_btn pull-right w-100`}
+                          className={`${vastuStyles.submitBtn} wpcf7-form-control wpcf7-submit asn_btn pull-right w-100`}
                         />
                       </div>
                       <div
@@ -407,4 +406,4 @@ const horoscope = () => {
     </div>
   );
 }
-export default horoscope;
+export default vastuconsultation;

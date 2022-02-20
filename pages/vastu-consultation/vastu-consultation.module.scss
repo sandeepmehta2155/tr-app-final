@@ -1,0 +1,193 @@
+.astPagetitle {
+    float: left;
+    width: 100%;
+    background-color: #272727;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #ffffff;
+    padding: 50px 0px 50px 0px;
+    background-image: url('/assets/innerbg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    .astImgOverlay {
+        position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+    }
+    .pageTitle {
+        &h1 {
+            color: #ffffff !important;
+        }
+    }
+   
+}
+.astVastuWrapper {
+    float: left;
+width: 100%;
+background-color: #ffffff;
+padding-bottom: 50px;
+padding-top: 30px;
+.astVastuInfo {
+    float: left;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.cta {
+    background: #000;
+    padding: 20px;
+    float: left;
+    width: 100%;
+    h4 {
+      float: left;
+      font-size: 32px;
+      color: #ffc66a;
+      width: auto;
+    }
+    a {
+      color: #ffffff;
+      float: right;
+      button {
+        color: #ffffff;
+        padding: 8px 24px;
+        font-size: 18px;
+        line-height: 27px;
+        border-radius: 9px;
+        background-color: #ffad29;
+      border: none;
+      }
+    }
+  }
+  .downloadBtn {
+    color: #FFFFFF;
+    background-color: #ffad29;
+    border-color: #cc8b21;
+    border-radius: 9px;
+    display: inline-block!important;
+    text-align: center;
+    text-decoration: none!important;
+    box-sizing: content-box!important;
+    transition: all .2s;
+ span {
+  color: #FFFFFF;
+    padding: 8px 24px;
+    font-size: 18px;
+    line-height: 27px;
+    border-color: #ffc66a;
+    display: block!important;
+    text-decoration: none!important;
+    box-sizing: content-box!important;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    background: 0 -20px url("https://trivediravi.com/wp-content/plugins/shortcodes-ultimate/includes/images/styles/style-soft.png") repeat-x;
+}
+  }
+  .reportTitle {
+    text-align: center;
+    margin: 20px 0 30px 0 !important;
+    width: 100%;
+    float: left;
+  }
+  .formWrapper {
+    float: left;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 40px 25px;
+    box-shadow: 0px 4px 25px -6px #777777;
+    label {
+      float: left;
+    width: 100%;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 3px;
+    font-size: 14px;
+    }
+    span {
+      float: left;
+    width: 100%;
+    position: relative;
+    input {
+      float: left;
+    width: 100%;
+    color: #333333;
+    height: 45px;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    padding: 0px 10px;
+    font-size: 14px;
+    &:focus-within {
+      outline: none;
+    }
+    }
+    textarea {
+      height: 46px !important;
+      padding: 10px 15px;
+    resize: vertical;
+    width:100%;
+    float: left;
+    width: 100%;
+    color: #333333;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    font-size: 14px;
+    &:focus-within {
+      outline: none;
+    }
+    }
+    }
+   .wrapPayment {
+    float: left;
+    margin-bottom: 20px;
+    width: 100%;
+    .formList {
+      display: flex;
+      align-items: baseline;  
+      margin: 0 0 0 1em;
+      width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    input {
+      border-radius: 3px;
+    padding: 0px 10px;
+    border: 1px solid #e1e1e1;
+    color: #333333;
+    height: auto !important;
+    width: auto !important;
+    float: left !important;
+    margin-right: 10px !important;
+    }
+    }
+}
+.paymentImg {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+.bankDetails {
+  float: left;
+  width: 100%;
+  margin: -40px 0 20px 40px;
+  font-size: 16px;
+}
+.submitBtn {
+  background-color: #ffad29 !important;
+    color: #fff !important;
+    text-transform: uppercase;
+    height: 45px;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    padding: 0px 10px;
+    font-size: 14px;
+}
+
+   }
+}
