@@ -2,19 +2,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import FooterComponent from '../../Components/Layout/Footer/FooterComponent';
 import HeaderComponent from '../../Components/Layout/Header/HeaderComponent';
-import horoscopeStyles from './horoscope.module.scss';
+import vedicStyles from './vedic-astrology.module.scss';
 
-const horoscope = () => {
+const vedicastrology = () => {
   return (
     <div>
       <HeaderComponent />
-      <div className={horoscopeStyles.astPagetitle}>
-        <div className={horoscopeStyles.astImgOverlay}></div>
+      <div className={vedicStyles.astPagetitle}>
+        <div className={vedicStyles.astImgOverlay}></div>
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12">
-              <div className={horoscopeStyles.pageTitle}>
-                <h1>Horoscope</h1>
+              <div className={vedicStyles.pageTitle}>
+                <h1>Vedic Astrology</h1>
               </div>
             </div>
             <div className="col-lg-12 col-md-12 col-sm-12">
@@ -24,44 +24,23 @@ const horoscope = () => {
                 </li>
                 <li>//</li>
                 <li>
-                  <a href="#">Horoscope</a>
+                  <a href="#">Vedic Astrology</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <div className={horoscopeStyles.astVastuWrapper}>
+      <div className={vedicStyles.astVastuWrapper}>
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div className={horoscopeStyles.astVastuInfo}>
+              <div className={vedicStyles.astVastuInfo}>
                 <p className="inner-text">
-                  Your birth date, time and place are a divine code of your
-                  destiny and It is coded by divine power. Trivedi Raviji is
-                  expert to decode it and can guide you for better life. The
-                  horoscope is normally used to forecast your future with
-                  respect to achievement and events. For example, education
-                  level, marriage life, career guide, wealth status, health
-                  matters and many more affairs too.
+                The astrology is eyes of Ved and there are many branches in vedic astrology like Birth chart prediction, verga kundali prediction, Sarvato bhadra chakra base prediction, horary i.e. prashna kundali prediction, etc. Trivedi Raviji had studied all said branches systematically in Gurukul and practicing on those methods since 1993.
                 </p>
-                <div className={horoscopeStyles.cta}>
-                  <h4>Get Sample Horoscope Report</h4>
-                  <a
-                    href="https://trivediravi.com/wp-content/uploads/2020/03/Career-future-Reports.pdf"
-                    className="su-button su-button-style-soft"
-                    target="_self"
-                    title="Horoscope Report Sample"
-                    download="Horoscope Sample Report"
-                  >
-                    <button className={horoscopeStyles.downloadBtn}>
-                      <FontAwesomeIcon icon={['fas', 'phone-volume']} />{' '}
-                      Download Now
-                    </button>
-                  </a>
-                </div>
-                <h2 className={horoscopeStyles.reportTitle}>
-                  Get Horoscope Report
+                <h2 className={vedicStyles.reportTitle}>
+                Get to Know More About Your Future
                 </h2>
                 <div className="ast_journal_box_wrapper">
                   <div
@@ -79,7 +58,7 @@ const horoscope = () => {
                     <form
                       action="/horoscope/#wpcf7-f342-p316-o2"
                       method="post"
-                      className={horoscopeStyles.formWrapper}
+                      className={vedicStyles.formWrapper}
                       encType="multipart/form-data"
                     >
                       <div style={{ display: "none" }}>
@@ -307,9 +286,9 @@ const horoscope = () => {
                             Select Mode of Payment
                           </label>
                           <br />
-                          <span className={horoscopeStyles.wrapPayment}>
+                          <span className={vedicStyles.wrapPayment}>
                             <span className="wpcf7-form-control wpcf7-radio">
-                              <span className={horoscopeStyles.formList}>
+                              <span className={vedicStyles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -320,7 +299,7 @@ const horoscope = () => {
                                   Banking/Cash Cards
                                 </span>
                               </span>
-                              <span className={horoscopeStyles.formList}>
+                              <span className={vedicStyles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -330,7 +309,7 @@ const horoscope = () => {
                                   NEFT (National Electronic Fund Transfer)
                                 </span>
                               </span>
-                              <span className={horoscopeStyles.formList}>
+                              <span className={vedicStyles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -340,7 +319,7 @@ const horoscope = () => {
                                   PAYTM / BHIM UPI
                                 </span>
                               </span>{" "}
-                              <span className={horoscopeStyles.formList}>
+                              <span className={vedicStyles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -360,7 +339,7 @@ const horoscope = () => {
                             </span>
                           </span>
                           <br />
-                          <span className={horoscopeStyles.bankDetails}>
+                          <span className={vedicStyles.bankDetails}>
                             <br />
                             SBI Bank A/C No: 30876664155
                             <br />
@@ -377,7 +356,7 @@ const horoscope = () => {
                         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                           <img
                             src="https://trivediravi.com/wp-content/uploads/2020/04/scanner.png"
-                            className={horoscopeStyles.paymentImg}
+                            className={vedicStyles.paymentImg}
                             alt="payment"
                             title="payment"
                           />
@@ -387,7 +366,7 @@ const horoscope = () => {
                         <input
                           type="submit"
                           value="Send"
-                          className={`${horoscopeStyles.submitBtn} wpcf7-form-control wpcf7-submit asn_btn pull-right w-100`}
+                          className={`${vedicStyles.submitBtn} wpcf7-form-control wpcf7-submit asn_btn pull-right w-100`}
                         />
                       </div>
                       <div
@@ -407,4 +386,4 @@ const horoscope = () => {
     </div>
   );
 }
-export default horoscope;
+export default vedicastrology;

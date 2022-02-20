@@ -2,19 +2,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import FooterComponent from '../../Components/Layout/Footer/FooterComponent';
 import HeaderComponent from '../../Components/Layout/Header/HeaderComponent';
-import horoscopeStyles from './horoscope.module.scss';
+import numerologyStyles from './numerology-report.module.scss';
 
-const horoscope = () => {
+const numerologyreport = () => {
   return (
     <div>
       <HeaderComponent />
-      <div className={horoscopeStyles.astPagetitle}>
-        <div className={horoscopeStyles.astImgOverlay}></div>
+      <div className={numerologyStyles.astPagetitle}>
+        <div className={numerologyStyles.astImgOverlay}></div>
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12">
-              <div className={horoscopeStyles.pageTitle}>
-                <h1>Horoscope</h1>
+              <div className={numerologyStyles.pageTitle}>
+                <h1>Numerology Report</h1>
               </div>
             </div>
             <div className="col-lg-12 col-md-12 col-sm-12">
@@ -24,29 +24,134 @@ const horoscope = () => {
                 </li>
                 <li>//</li>
                 <li>
-                  <a href="#">Horoscope</a>
+                  <a href="#">Numerology Report</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <div className={horoscopeStyles.astVastuWrapper}>
+      <div className={numerologyStyles.astVastuWrapper}>
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div className={horoscopeStyles.astVastuInfo}>
-                <p className="inner-text">
-                  Your birth date, time and place are a divine code of your
-                  destiny and It is coded by divine power. Trivedi Raviji is
-                  expert to decode it and can guide you for better life. The
-                  horoscope is normally used to forecast your future with
-                  respect to achievement and events. For example, education
-                  level, marriage life, career guide, wealth status, health
-                  matters and many more affairs too.
+              <div className={numerologyStyles.astVastuInfo}>
+                <p className="inner-text">The solar system has nine planets and in mathematics also be used to calculate any puzzle by 1 to 9 numbers where zero is neutral number. Numerology is belief in the divine power. It is great mystical relationship between a number and most coinciding events. Generally, the number and alphabet are basic tool to predict the event.<br />
+                  Trivedi Ravi’s team is provided various services for numerology.<br />
+                  Following reports are help to identify your nature, dynamic abilities, quality, reactions, luck factors, etc. and accordingly person can modify is destiny.<br />
+                  Expression number,<br />
+                  Aspiration number,<br />
+                  Lucky number,<br />
+                  Life path number,<br />
+                  General prediction for lucky number (Bhagyank)
                 </p>
-                <div className={horoscopeStyles.cta}>
-                  <h4>Get Sample Horoscope Report</h4>
+                <div>
+                  <h4 className='f-18'><strong>Number 1.</strong></h4>
+                  <h5 className='f-14'>Birth Date:1, 10, 19, 28</h5>
+                  <p className='f-14'>This number has ruling planet is <strong>Sun</strong>.<br />
+                    The person is generally workaholic and self representing nature.<br />
+                    <strong>Suitable profession</strong> for 1 number fellow are innovator, government servant, doctor, manager, businessman, etc.<br />
+                    <strong>Possible disease</strong>: Lungs, bones, acidity related illness.<br />
+                  </p>
+                </div>
+                <div>
+                  <h4 className='f-18'><strong>Number 2.
+                  </strong></h4>
+                  <h5 className='f-14'>Birth Date:2, 11, 20, 29
+                  </h5>
+                  <p className='f-14'>This number has ruling planet is <strong>Moon</strong>.<br />
+                    The person is generally shy, good behavior, slightly over conscious.
+                    <br />
+                    <strong>Suitable profession</strong> for 2 number fellows is designing, architect, advisor, etc.<br />
+                    <strong>Possible disease</strong>: Lungs, bones, acidity related illness.<br />
+                  </p>
+                </div>
+                <div>
+                  <h4 className='f-18'><strong>Number 3.
+                  </strong></h4>
+                  <h5 className='f-14'>Birth Date: 3, 12, 21, 30
+                  </h5>
+                  <p className='f-14'>This number has ruling planet is <strong>Jupiter</strong>.<br />
+                    The person is generally social animal, good communication skill, slightly proudly.
+                    <br />
+                    <strong>Suitable profession</strong>  for 3 number fellows is lawyer, teacher, food related business, etc.<br />
+                    <strong>Possible disease</strong>: skin, neuron, ear related illness.<br />
+                  </p>
+                </div>
+                <div>
+                  <h4 className='f-18'><strong>Number 4.
+                  </strong></h4>
+                  <h5 className='f-14'>Birth Date: 4, 13, 22, 31
+                  </h5>
+                  <p className='f-14'>This number has ruling planet is <strong>rahu</strong>.<br />
+                    The person is generally demolition men, good arguments skill, slightly sensitive.
+                    <br />
+                    <strong>Suitable profession</strong> for 4 number fellows is photographer, journalist, politician engineer, etc.<br />
+                    <strong>Possible disease</strong>: weak mental health, fever, back pain, abdomen, and throat infection related illness.<br />
+                  </p>
+                </div>
+                <div>
+                  <h4 className='f-18'><strong>Number 5.
+                  </strong></h4>
+                  <h5 className='f-14'>Birth Date: 5, 14, 23
+                  </h5>
+                  <p className='f-14'>This number has ruling planet is <strong> Mercury</strong>.<br />
+                    The person has generally good memory & money conscious, friendship skill, slightly talkative.
+                    <br />
+                    <strong>Suitable profession</strong> for 5 number fellows is consultant, trader, broker, CA, etc.<br />
+                    <strong>Possible disease</strong>: Anxiety, gastric, upset stomach related illness.<br />
+                  </p>
+                </div>
+                <div>
+                  <h4 className='f-18'><strong>Number 6.
+                  </strong></h4>
+                  <h5 className='f-14'>Birth Date: 6, 15, 24
+                  </h5>
+                  <p className='f-14'>This number has ruling planet is <strong>Venus</strong>.<br />
+                    The person has generally romantic and artistic nature, good creativity, friendship skill, slightly crazy.
+                    <br />
+                    <strong>Suitable profession</strong> for 6 number fellows is jewelers, nurse, actor, painter, designer, hotelier, etc.<br />
+                    <strong>Possible disease</strong>:  Nose, appendix, heart and blood circulation related illness.<br />
+                  </p>
+                </div>
+                <div>
+                  <h4 className='f-18'><strong>Number 7.
+                  </strong></h4>
+                  <h5 className='f-14'>Birth Date: 7, 16, 25
+                  </h5>
+                  <p className='f-14'>This number has ruling planet is <strong>Ketu</strong>.<br />
+                  The person has generally hard working personality and knowledge lover, good ability to control mass population, slightly avoid taking responsibility for long time.
+                    <br />
+                    <strong>Suitable profession</strong>  for 7 number fellows is manager, trusty, detective, doctor, electrician, priest, etc.<br />
+                    <strong>Possible disease</strong>: Memory, teeth, skin related illness.<br />
+                  </p>
+                </div>
+                <div>
+                  <h4 className='f-18'><strong>Number 8.
+                  </strong></h4>
+                  <h5 className='f-14'>Birth Date: 8, 17, 26
+                  </h5>
+                  <p className='f-14'>This number has ruling planet is <strong>Saturn</strong>.<br />
+                  The person has generally good grasping power, favor loneliness, caring nature for female, slightly negative thought process.
+                    <br />
+                    <strong>Suitable profession</strong> for 8 number fellows is contractor, secretary, care taker, businessmen, etc.<br />
+                    <strong>Possible disease</strong>: kidney stone, arthritis, constipation related illness.<br />
+                  </p>
+                </div>
+                <div>
+                  <h4 className='f-18'><strong>Number 9.
+                  </strong></h4>
+                  <h5 className='f-14'>Birth Date: 9, 18, 27
+                  </h5>
+                  <p className='f-14'>This number has ruling planet is <strong> Mars</strong>.<br />
+                  The person has generally constructive nature, good energy level, favor national movement, possessive nature for female, slightly angered.
+                    <br />
+                    <strong>Suitable profession</strong> for 9 number fellows is Police, army, farmer, chemist, barky owner, etc.<br />
+                    <strong>Possible disease</strong>: Blood infection, acne, piles, headache related illness.<br />
+                  </p>
+                </div>
+                <div className={numerologyStyles.cta}>
+                  <h4>Get Sample Numerology Report</h4>
                   <a
                     href="https://trivediravi.com/wp-content/uploads/2020/03/Career-future-Reports.pdf"
                     className="su-button su-button-style-soft"
@@ -54,14 +159,14 @@ const horoscope = () => {
                     title="Horoscope Report Sample"
                     download="Horoscope Sample Report"
                   >
-                    <button className={horoscopeStyles.downloadBtn}>
+                    <button className={numerologyStyles.downloadBtn}>
                       <FontAwesomeIcon icon={['fas', 'phone-volume']} />{' '}
                       Download Now
                     </button>
                   </a>
                 </div>
-                <h2 className={horoscopeStyles.reportTitle}>
-                  Get Horoscope Report
+                <h2 className={numerologyStyles.reportTitle}>
+                Get Numerology Report
                 </h2>
                 <div className="ast_journal_box_wrapper">
                   <div
@@ -79,7 +184,7 @@ const horoscope = () => {
                     <form
                       action="/horoscope/#wpcf7-f342-p316-o2"
                       method="post"
-                      className={horoscopeStyles.formWrapper}
+                      className={numerologyStyles.formWrapper}
                       encType="multipart/form-data"
                     >
                       <div style={{ display: "none" }}>
@@ -279,7 +384,7 @@ const horoscope = () => {
                           </span>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                          <label>Upload Your Kundali</label>
+                          <label>Upload Your Document</label>
                           <br />
                           <span className="wpcf7-form-control-wrap kundali">
                             <input
@@ -307,9 +412,9 @@ const horoscope = () => {
                             Select Mode of Payment
                           </label>
                           <br />
-                          <span className={horoscopeStyles.wrapPayment}>
+                          <span className={numerologyStyles.wrapPayment}>
                             <span className="wpcf7-form-control wpcf7-radio">
-                              <span className={horoscopeStyles.formList}>
+                              <span className={numerologyStyles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -320,7 +425,7 @@ const horoscope = () => {
                                   Banking/Cash Cards
                                 </span>
                               </span>
-                              <span className={horoscopeStyles.formList}>
+                              <span className={numerologyStyles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -330,7 +435,7 @@ const horoscope = () => {
                                   NEFT (National Electronic Fund Transfer)
                                 </span>
                               </span>
-                              <span className={horoscopeStyles.formList}>
+                              <span className={numerologyStyles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -340,7 +445,7 @@ const horoscope = () => {
                                   PAYTM / BHIM UPI
                                 </span>
                               </span>{" "}
-                              <span className={horoscopeStyles.formList}>
+                              <span className={numerologyStyles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -360,7 +465,7 @@ const horoscope = () => {
                             </span>
                           </span>
                           <br />
-                          <span className={horoscopeStyles.bankDetails}>
+                          <span className={numerologyStyles.bankDetails}>
                             <br />
                             SBI Bank A/C No: 30876664155
                             <br />
@@ -377,7 +482,7 @@ const horoscope = () => {
                         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                           <img
                             src="https://trivediravi.com/wp-content/uploads/2020/04/scanner.png"
-                            className={horoscopeStyles.paymentImg}
+                            className={numerologyStyles.paymentImg}
                             alt="payment"
                             title="payment"
                           />
@@ -387,7 +492,7 @@ const horoscope = () => {
                         <input
                           type="submit"
                           value="Send"
-                          className={`${horoscopeStyles.submitBtn} wpcf7-form-control wpcf7-submit asn_btn pull-right w-100`}
+                          className={`${numerologyStyles.submitBtn} wpcf7-form-control wpcf7-submit asn_btn pull-right w-100`}
                         />
                       </div>
                       <div
@@ -407,4 +512,4 @@ const horoscope = () => {
     </div>
   );
 }
-export default horoscope;
+export default numerologyreport;

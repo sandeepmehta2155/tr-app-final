@@ -56,12 +56,12 @@ const Services = () => {
             <br />
             <br />
             <h5>Horoscopes</h5>
-            <div style={{ width: "73%", margin: "auto" }} >
+            <div className="f-14" >
               Horoscope analysis for your query not limited to subjects.
             </div>
             <br />
             <Link href="/horoscope">
-              <button className="bg-warning bg-lighten-lg text-white p-2 ml-2 border border-white"> Read More </button>
+               <button className="ast_btn"> Read More </button>
             </Link>
           </div>
           <div style={{ width: "33%" }} className="col-lg-4 p-5 col-md-12 text-center col-sm-12 border border-lightgray">
@@ -69,24 +69,28 @@ const Services = () => {
             <br />
             <br />
             <h5>Traditional Muhurat</h5>
-            <div style={{ width: "90%", margin: "auto" }} >
+            <div className="f-14" >
               For marriage, Gruh pravesh, Kalsh poojan, Janoi, Simant, Mundal,
               etc.
             </div>
             <br />
-            <button className="bg-warning bg-lighten-lg text-white p-2 ml-2 border border-white"> Read More </button>
+            <Link href="/traditional-muhurat">
+               <button className="ast_btn"> Read More </button>
+            </Link>
           </div>
           <div style={{ width: "33%" }} className="col-lg-4 p-5 col-md-12 text-center col-sm-12 border border-lightgray">
             <img className="mb-2" src="https://trivediravi.com/wp-content/themes/astro/images/content/sv4.png" />
             <br />
             <br />
             <h5>Modern Muhurat</h5>
-            <div style={{ width: "73%", margin: "auto" }} >
+            <div className="f-14" >
               Time to apply Visa, court appeal, Purchase machinery and many
               more.
             </div>
             <br />
-            <button className="bg-warning bg-lighten-lg text-white p-2 ml-2 border border-white"> Read More </button>
+            <Link href="/modern-muhurat">
+               <button className="ast_btn"> Read More </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -97,33 +101,39 @@ const Services = () => {
             <br />
             <br />
             <h5>Numerology</h5>
-            <div style={{ width: "73%", margin: "auto" }} >
+            <div className="f-14" >
               Related to find lucky number for your bank account, mobile number, etc.
             </div>
             <br />
-            <button className="bg-warning bg-lighten-lg text-white p-2 ml-2 border border-white"> Read More </button>
+            <Link href="/numerology-report">
+               <button className="ast_btn"> Read More </button>
+            </Link>
           </div>
           <div style={{ width: "33%" }} className="col-lg-4 p-5 col-md-12 text-center col-sm-12 border border-lightgray">
             <img className="mb-2" src="https://trivediravi.com/wp-content/themes/astro/images/content/sv6.png" />
             <br />
             <br />
             <h5>Vastu Consultation</h5>
-            <div style={{ width: "90%", margin: "auto" }} >
+            <div className="f-14" >
               For land acquisition, plot-duplex, flat selection, Office, Factory etc.
             </div>
             <br />
-            <button className="bg-warning bg-lighten-lg text-white p-2 ml-2 border border-white"> Read More </button>
+            <Link href="/vastu-consultation">
+               <button className="ast_btn"> Read More </button>
+            </Link>
           </div>
           <div style={{ width: "33%" }} className="col-lg-4 p-5 col-md-12 text-center col-sm-12 border border-lightgray">
             <img className="mb-2" src="https://trivediravi.com/wp-content/themes/astro/images/content/sv11.png" />
             <br />
             <br />
             <h5>Vedic Astrology</h5>
-            <div style={{ width: "73%", margin: "auto" }} >
+            <div className="f-14" >
               Birth chart, Verga kundali and Sarvato bhadra chakra base prediction
             </div>
             <br />
-            <button className="bg-warning bg-lighten-lg text-white p-2 ml-2 border border-white"> Read More </button>
+            <Link href="/vedic-astrology">
+               <button className="ast_btn"> Read More </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -134,33 +144,37 @@ const Services = () => {
             <br />
             <br />
             <h5>Kundali</h5>
-            <div style={{ width: "73%", margin: "auto" }} >
+            <div className="f-14" >
               For Education, Marriage life, Career Guide, Wealth & Health matters & more.
             </div>
             <br />
-            <button className="bg-warning bg-lighten-lg text-white p-2 ml-2 border border-white"> Read More </button>
+            <Link href="/kundali">
+               <button className="ast_btn"> Read More </button>
+            </Link>
           </div>
           <div style={{ width: "33%" }} className="col-lg-4 p-5 col-md-12 text-center col-sm-12 border border-lightgray">
             <img className="mb-2" src="https://trivediravi.com/wp-content/themes/astro/images/content/sv10.png" />
             <br />
             <br />
             <h5>Career Guidelines</h5>
-            <div style={{ width: "90%", margin: "auto" }} >
+            <div className="f-14" >
               Advise for better career and personal growth with respect to education line.
             </div>
             <br />
-            <button className="bg-warning bg-lighten-lg text-white p-2 ml-2 border border-white"> Read More </button>
+             <button className="ast_btn"> Read More </button>
           </div>
           <div style={{ width: "33%" }} className="col-lg-4 p-5 col-md-12 text-center col-sm-12 border border-lightgray">
             <img className="mb-2" src="https://trivediravi.com/wp-content/themes/astro/images/content/sv9.png" />
             <br />
             <br />
             <h5>Finance Reports</h5>
-            <div style={{ width: "73%", margin: "auto" }} >
+            <div className="f-14" >
               Predict about your company growth or individual growth on financial front.
             </div>
             <br />
-            <button className="bg-warning bg-lighten-lg text-white p-2 ml-2 border border-white"> Read More </button>
+            <Link href="/finance-report">
+               <button className="ast_btn"> Read More </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -171,22 +185,26 @@ const Services = () => {
             <br />
             <br />
             <h5>Business Reports</h5>
-            <div style={{ width: "73%", margin: "auto" }} >
+            <div className="f-14" >
               Business expansion, To get new product launching time and more.
             </div>
             <br />
-            <button className="bg-warning bg-lighten-lg text-white p-2 ml-2 border border-white"> Read More </button>
+            <Link href="/business-report">
+               <button className="ast_btn"> Read More </button>
+            </Link>
           </div>
           <div style={{ width: "33%" }} className="col-lg-4 p-5 col-md-12 text-center col-sm-12 border border-lightgray">
             <img className="mb-2" src="https://trivediravi.com/wp-content/themes/astro/images/content/sv5.png" />
             <br />
             <br />
             <h5>Birth Star Reports</h5>
-            <div style={{ width: "90%", margin: "auto" }} >
+            <div className="f-14" >
               Forecast about your future achievement and events.
             </div>
             <br />
-            <button className="bg-warning bg-lighten-lg text-white p-2 ml-2 border border-white"> Read More </button>
+            <Link href="/birth-star-report">
+              <button className="ast_btn"> Read More </button>
+            </Link>
           </div>
 
         </div>

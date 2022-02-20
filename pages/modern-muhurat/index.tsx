@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import FooterComponent from '../../Components/Layout/Footer/FooterComponent';
 import HeaderComponent from '../../Components/Layout/Header/HeaderComponent';
-import horoscopeStyles from './horoscope.module.scss';
+import horoscopeStyles from './modern-muhrat.module.scss';
 
 const horoscope = () => {
   return (
@@ -14,7 +14,7 @@ const horoscope = () => {
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12">
               <div className={horoscopeStyles.pageTitle}>
-                <h1>Horoscope</h1>
+                <h1>Modern Muhurat</h1>
               </div>
             </div>
             <div className="col-lg-12 col-md-12 col-sm-12">
@@ -24,7 +24,7 @@ const horoscope = () => {
                 </li>
                 <li>//</li>
                 <li>
-                  <a href="#">Horoscope</a>
+                  <a href="#">Modern Muhurat</a>
                 </li>
               </ul>
             </div>
@@ -37,31 +37,13 @@ const horoscope = () => {
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div className={horoscopeStyles.astVastuInfo}>
                 <p className="inner-text">
-                  Your birth date, time and place are a divine code of your
-                  destiny and It is coded by divine power. Trivedi Raviji is
-                  expert to decode it and can guide you for better life. The
-                  horoscope is normally used to forecast your future with
-                  respect to achievement and events. For example, education
-                  level, marriage life, career guide, wealth status, health
-                  matters and many more affairs too.
+                  You can consult to Raviji and make your effort smooth. Trivedi Raviji is expert to calculate accurate and auspicious time for go-live website, date of advertisement, proposal date to girl / boy friend, Visa file time, Court appeal time, conceiving time for married couple, Exam preparation time, lottery purchase time, etc.
                 </p>
-                <div className={horoscopeStyles.cta}>
-                  <h4>Get Sample Horoscope Report</h4>
-                  <a
-                    href="https://trivediravi.com/wp-content/uploads/2020/03/Career-future-Reports.pdf"
-                    className="su-button su-button-style-soft"
-                    target="_self"
-                    title="Horoscope Report Sample"
-                    download="Horoscope Sample Report"
-                  >
-                    <button className={horoscopeStyles.downloadBtn}>
-                      <FontAwesomeIcon icon={['fas', 'phone-volume']} />{' '}
-                      Download Now
-                    </button>
-                  </a>
-                </div>
+
                 <h2 className={horoscopeStyles.reportTitle}>
-                  Get Horoscope Report
+                Get To Know Modern Muhurat
+
+
                 </h2>
                 <div className="ast_journal_box_wrapper">
                   <div
@@ -187,7 +169,7 @@ const horoscope = () => {
                             <input
                               type="date"
                               name="bdate"
-                              // value="DD/MM/YYYY"
+                              // value="date"
                               size={40}
                               className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                               id="datepicker"
@@ -279,18 +261,27 @@ const horoscope = () => {
                           </span>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                          <label>Upload Your Kundali</label>
+                          <label>Select Month For Muhurat</label>
                           <br />
-                          <span className="wpcf7-form-control-wrap kundali">
-                            <input
-                              type="file"
-                              name="kundali"
-                              size={40}
-                              style={{ padding: "10px" }}
-                              className="mb-0 wpcf7-form-control wpcf7-file f-14"
-                              accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv"
+                          <span className="wpcf7-form-control-wrap gender">
+                            <select
+                              name="gender"
+                              className="wpcf7-form-control wpcf7-select"
                               aria-invalid="false"
-                            />
+                            >
+                              <option value="Male">January</option>
+                              <option value="February">February</option>
+                              <option value="March">March</option>
+                              <option value="April">April</option>
+                              <option value="May">May</option>
+                              <option value="June">June</option>
+                              <option value="July">July</option>
+                              <option value="August">August</option>
+                              <option value="September">September</option>
+                              <option value="October">October</option>
+                              <option value="November">November</option>
+                              <option value="December">December</option>
+                            </select>
                           </span>
                         </div>
                       </div>

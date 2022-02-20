@@ -2,19 +2,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import FooterComponent from '../../Components/Layout/Footer/FooterComponent';
 import HeaderComponent from '../../Components/Layout/Header/HeaderComponent';
-import horoscopeStyles from './horoscope.module.scss';
+import muhratStyles from './traditional-muhrat.module.scss';
 
-const horoscope = () => {
+const traditionalmuhrat = () => {
   return (
     <div>
       <HeaderComponent />
-      <div className={horoscopeStyles.astPagetitle}>
-        <div className={horoscopeStyles.astImgOverlay}></div>
+      <div className={muhratStyles.astPagetitle}>
+        <div className={muhratStyles.astImgOverlay}></div>
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12">
-              <div className={horoscopeStyles.pageTitle}>
-                <h1>Horoscope</h1>
+              <div className={muhratStyles.pageTitle}>
+                <h1>Traditional Muhurat</h1>
               </div>
             </div>
             <div className="col-lg-12 col-md-12 col-sm-12">
@@ -24,44 +24,25 @@ const horoscope = () => {
                 </li>
                 <li>//</li>
                 <li>
-                  <a href="#">Horoscope</a>
+                  <a href="#">Traditional Muhurat</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <div className={horoscopeStyles.astVastuWrapper}>
+      <div className={muhratStyles.astVastuWrapper}>
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div className={horoscopeStyles.astVastuInfo}>
+              <div className={muhratStyles.astVastuInfo}>
                 <p className="inner-text">
-                  Your birth date, time and place are a divine code of your
-                  destiny and It is coded by divine power. Trivedi Raviji is
-                  expert to decode it and can guide you for better life. The
-                  horoscope is normally used to forecast your future with
-                  respect to achievement and events. For example, education
-                  level, marriage life, career guide, wealth status, health
-                  matters and many more affairs too.
+                  Trivedi raviji will provide you some auspicious time for Janoi ceremony, Collage joining date, ring ceremony, vehicle purchase, marriage date and time, simant ceremony, Gruh pravesh time, etc
                 </p>
-                <div className={horoscopeStyles.cta}>
-                  <h4>Get Sample Horoscope Report</h4>
-                  <a
-                    href="https://trivediravi.com/wp-content/uploads/2020/03/Career-future-Reports.pdf"
-                    className="su-button su-button-style-soft"
-                    target="_self"
-                    title="Horoscope Report Sample"
-                    download="Horoscope Sample Report"
-                  >
-                    <button className={horoscopeStyles.downloadBtn}>
-                      <FontAwesomeIcon icon={['fas', 'phone-volume']} />{' '}
-                      Download Now
-                    </button>
-                  </a>
-                </div>
-                <h2 className={horoscopeStyles.reportTitle}>
-                  Get Horoscope Report
+
+                <h2 className={muhratStyles.reportTitle}>
+                Get To Know Traditional Muhurat
+
                 </h2>
                 <div className="ast_journal_box_wrapper">
                   <div
@@ -79,7 +60,7 @@ const horoscope = () => {
                     <form
                       action="/horoscope/#wpcf7-f342-p316-o2"
                       method="post"
-                      className={horoscopeStyles.formWrapper}
+                      className={muhratStyles.formWrapper}
                       encType="multipart/form-data"
                     >
                       <div style={{ display: "none" }}>
@@ -279,18 +260,27 @@ const horoscope = () => {
                           </span>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                          <label>Upload Your Kundali</label>
+                          <label>Select Month For Muhurat</label>
                           <br />
-                          <span className="wpcf7-form-control-wrap kundali">
-                            <input
-                              type="file"
-                              name="kundali"
-                              size={40}
-                              style={{ padding: "10px" }}
-                              className="mb-0 wpcf7-form-control wpcf7-file f-14"
-                              accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv"
+                          <span className="wpcf7-form-control-wrap gender">
+                            <select
+                              name="gender"
+                              className="wpcf7-form-control wpcf7-select"
                               aria-invalid="false"
-                            />
+                            >
+                              <option value="Male">January</option>
+                              <option value="February">February</option>
+                              <option value="March">March</option>
+                              <option value="April">April</option>
+                              <option value="May">May</option>
+                              <option value="June">June</option>
+                              <option value="July">July</option>
+                              <option value="August">August</option>
+                              <option value="September">September</option>
+                              <option value="October">October</option>
+                              <option value="November">November</option>
+                              <option value="December">December</option>
+                            </select>
                           </span>
                         </div>
                       </div>
@@ -307,9 +297,9 @@ const horoscope = () => {
                             Select Mode of Payment
                           </label>
                           <br />
-                          <span className={horoscopeStyles.wrapPayment}>
+                          <span className={muhratStyles.wrapPayment}>
                             <span className="wpcf7-form-control wpcf7-radio">
-                              <span className={horoscopeStyles.formList}>
+                              <span className={muhratStyles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -320,7 +310,7 @@ const horoscope = () => {
                                   Banking/Cash Cards
                                 </span>
                               </span>
-                              <span className={horoscopeStyles.formList}>
+                              <span className={muhratStyles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -330,7 +320,7 @@ const horoscope = () => {
                                   NEFT (National Electronic Fund Transfer)
                                 </span>
                               </span>
-                              <span className={horoscopeStyles.formList}>
+                              <span className={muhratStyles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -340,7 +330,7 @@ const horoscope = () => {
                                   PAYTM / BHIM UPI
                                 </span>
                               </span>{" "}
-                              <span className={horoscopeStyles.formList}>
+                              <span className={muhratStyles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -360,7 +350,7 @@ const horoscope = () => {
                             </span>
                           </span>
                           <br />
-                          <span className={horoscopeStyles.bankDetails}>
+                          <span className={muhratStyles.bankDetails}>
                             <br />
                             SBI Bank A/C No: 30876664155
                             <br />
@@ -377,7 +367,7 @@ const horoscope = () => {
                         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                           <img
                             src="https://trivediravi.com/wp-content/uploads/2020/04/scanner.png"
-                            className={horoscopeStyles.paymentImg}
+                            className={muhratStyles.paymentImg}
                             alt="payment"
                             title="payment"
                           />
@@ -387,7 +377,7 @@ const horoscope = () => {
                         <input
                           type="submit"
                           value="Send"
-                          className={`${horoscopeStyles.submitBtn} wpcf7-form-control wpcf7-submit asn_btn pull-right w-100`}
+                          className={`${muhratStyles.submitBtn} wpcf7-form-control wpcf7-submit asn_btn pull-right w-100`}
                         />
                       </div>
                       <div
@@ -407,4 +397,4 @@ const horoscope = () => {
     </div>
   );
 }
-export default horoscope;
+export default traditionalmuhrat;

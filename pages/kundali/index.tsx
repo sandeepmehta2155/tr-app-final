@@ -2,19 +2,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import FooterComponent from '../../Components/Layout/Footer/FooterComponent';
 import HeaderComponent from '../../Components/Layout/Header/HeaderComponent';
-import horoscopeStyles from './horoscope.module.scss';
+import kundalityles from './kundali.module.scss';
 
-const horoscope = () => {
+const kundali = () => {
   return (
     <div>
       <HeaderComponent />
-      <div className={horoscopeStyles.astPagetitle}>
-        <div className={horoscopeStyles.astImgOverlay}></div>
+      <div className={kundalityles.astPagetitle}>
+        <div className={kundalityles.astImgOverlay}></div>
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12">
-              <div className={horoscopeStyles.pageTitle}>
-                <h1>Horoscope</h1>
+              <div className={kundalityles.pageTitle}>
+                <h1>Kundali</h1>
               </div>
             </div>
             <div className="col-lg-12 col-md-12 col-sm-12">
@@ -24,29 +24,37 @@ const horoscope = () => {
                 </li>
                 <li>//</li>
                 <li>
-                  <a href="#">Horoscope</a>
+                  <a href="#">Kundali</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <div className={horoscopeStyles.astVastuWrapper}>
+      <div className={kundalityles.astVastuWrapper}>
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div className={horoscopeStyles.astVastuInfo}>
-                <p className="inner-text">
-                  Your birth date, time and place are a divine code of your
-                  destiny and It is coded by divine power. Trivedi Raviji is
-                  expert to decode it and can guide you for better life. The
-                  horoscope is normally used to forecast your future with
-                  respect to achievement and events. For example, education
-                  level, marriage life, career guide, wealth status, health
-                  matters and many more affairs too.
-                </p>
-                <div className={horoscopeStyles.cta}>
-                  <h4>Get Sample Horoscope Report</h4>
+              <div className={kundalityles.astVastuInfo}>
+                <div className='row'>
+                  <div className='col-md-9 col-12'>
+                    <p className="inner-text">
+                      Individual horoscopes are the most commonly known form of Astrology in the world. Now days, there are lots of challenges in individual life and most of the person find instant and accurate solutions for that.
+                    </p>
+                    <p className="inner-text">
+                      In this matter, Trivedi Ravi is providing best astrological services. He can resolve many problems of individual life for example, help to find perfect period when one can get Job, help in selection of Job or business, Marriage yog as well as help to improve marriage life, he is expert to predict when one can get property.
+                    </p>
+                    <p className="inner-text">
+                      Trivedi Ravi had studied vedic astrology, KP astrology, Navmansha method, arudh pada, Sarvatobhadra chakra, Muhurt shahtr, Numerology, Lo shu grid, Vastu shahtra. He is passionate for pure astrology and prediction. Trivedi Ravi is professional astrologer and practicing since 1993.
+                    </p>
+                  </div>
+                  <div className='col-md-3 col-12'>
+                    <img src="/assets/kundali.jpg" alt="" className='w-100' />
+                  </div>
+                </div>
+
+                <div className={kundalityles.cta}>
+                  <h4>Get Sample Kundali</h4>
                   <a
                     href="https://trivediravi.com/wp-content/uploads/2020/03/Career-future-Reports.pdf"
                     className="su-button su-button-style-soft"
@@ -54,14 +62,14 @@ const horoscope = () => {
                     title="Horoscope Report Sample"
                     download="Horoscope Sample Report"
                   >
-                    <button className={horoscopeStyles.downloadBtn}>
+                    <button className={kundalityles.downloadBtn}>
                       <FontAwesomeIcon icon={['fas', 'phone-volume']} />{' '}
                       Download Now
                     </button>
                   </a>
                 </div>
-                <h2 className={horoscopeStyles.reportTitle}>
-                  Get Horoscope Report
+                <h2 className={kundalityles.reportTitle}>
+                  Get Your Kundali
                 </h2>
                 <div className="ast_journal_box_wrapper">
                   <div
@@ -79,7 +87,7 @@ const horoscope = () => {
                     <form
                       action="/horoscope/#wpcf7-f342-p316-o2"
                       method="post"
-                      className={horoscopeStyles.formWrapper}
+                      className={kundalityles.formWrapper}
                       encType="multipart/form-data"
                     >
                       <div style={{ display: "none" }}>
@@ -279,7 +287,7 @@ const horoscope = () => {
                           </span>
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                          <label>Upload Your Kundali</label>
+                          <label>Upload Your Current Kundali If You Have</label>
                           <br />
                           <span className="wpcf7-form-control-wrap kundali">
                             <input
@@ -307,9 +315,9 @@ const horoscope = () => {
                             Select Mode of Payment
                           </label>
                           <br />
-                          <span className={horoscopeStyles.wrapPayment}>
+                          <span className={kundalityles.wrapPayment}>
                             <span className="wpcf7-form-control wpcf7-radio">
-                              <span className={horoscopeStyles.formList}>
+                              <span className={kundalityles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -320,7 +328,7 @@ const horoscope = () => {
                                   Banking/Cash Cards
                                 </span>
                               </span>
-                              <span className={horoscopeStyles.formList}>
+                              <span className={kundalityles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -330,7 +338,7 @@ const horoscope = () => {
                                   NEFT (National Electronic Fund Transfer)
                                 </span>
                               </span>
-                              <span className={horoscopeStyles.formList}>
+                              <span className={kundalityles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -340,7 +348,7 @@ const horoscope = () => {
                                   PAYTM / BHIM UPI
                                 </span>
                               </span>{" "}
-                              <span className={horoscopeStyles.formList}>
+                              <span className={kundalityles.formList}>
                                 <input
                                   type="radio"
                                   name="payment"
@@ -360,7 +368,7 @@ const horoscope = () => {
                             </span>
                           </span>
                           <br />
-                          <span className={horoscopeStyles.bankDetails}>
+                          <span className={kundalityles.bankDetails}>
                             <br />
                             SBI Bank A/C No: 30876664155
                             <br />
@@ -377,7 +385,7 @@ const horoscope = () => {
                         <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                           <img
                             src="https://trivediravi.com/wp-content/uploads/2020/04/scanner.png"
-                            className={horoscopeStyles.paymentImg}
+                            className={kundalityles.paymentImg}
                             alt="payment"
                             title="payment"
                           />
@@ -387,7 +395,7 @@ const horoscope = () => {
                         <input
                           type="submit"
                           value="Send"
-                          className={`${horoscopeStyles.submitBtn} wpcf7-form-control wpcf7-submit asn_btn pull-right w-100`}
+                          className={`${kundalityles.submitBtn} wpcf7-form-control wpcf7-submit asn_btn pull-right w-100`}
                         />
                       </div>
                       <div
@@ -407,4 +415,4 @@ const horoscope = () => {
     </div>
   );
 }
-export default horoscope;
+export default kundali;
