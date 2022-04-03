@@ -18,8 +18,8 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: 'Philosopher', sans-serif;
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Philosopher', sans-serif !important;
   font-weight: 600;
   line-height: 1.1;
 }
@@ -35,6 +35,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .text-primary {
 color: #ffad29 !important;
 }
+.bg-primary {
+  background-color: #ffad29 !important;
+}
 .f-14 {
   font-size: 14px !important;
 }
@@ -43,6 +46,9 @@ color: #ffad29 !important;
 }
 .f-18 {
   font-size: 18px !important;
+}
+.f-20 {
+  font-size: 20px !important;
 }
 //Header CSS Start //
 .ast_menu ul {

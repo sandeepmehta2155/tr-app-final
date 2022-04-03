@@ -81,5 +81,81 @@ padding-top: 30px;
     }
     }
 }
+.ast_vedic_astrology {
+    float: left;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    transition: all 0.5s;
+    min-height: 495px;
+    .ntitle{
+        background: #ffad29;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    float: left;
+    width: 100%;
+    font-size: 20px;
+    margin: 0px 0px 15px 0px;
+    text-transform: capitalize;
+    }
+.astSearchBox {
+    float: left;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px 15px 15px 15px;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    input {
+        float: left;
+        width: 100%;
+        padding: 0px 10px;
+        height: 45px;
+        border: 1px solid #e1e1e1;
+        border-radius: 3px;
+        margin-bottom: 15px;
+    }
+}
+ul {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    li {
+        list-style: none;
+    float: left;
+    width: 100%;
+    border-top: 1px solid #e1e1e1;
+    padding: 10px 0px;
+    img {
+        width: 45px;
+        height: 45px;
+        float: left;
+    }
+    .ast_vedic_astro_info {
+        float: left;
+    width: calc(100% - 50px);
+    padding-left: 20px;
+    }
+    }
+}
+.ast_vedic_astro_box{
+    float: left;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #e1e1e1;
+    padding-top: 15px;
+    p {
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin: 10px 0px;
+    font-size: 14px;
+    }
+}
+}
 }
 
