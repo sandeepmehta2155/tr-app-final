@@ -159,7 +159,7 @@ const HomeScene = (props: any) => {
                   Today&#39;s Expert Tips
                 </h4>
                 <br />
-                <div className={AboutusStyles.ast_vedic_astro_box}>
+                <div className={AboutusStyles.ast_vedic_astro_box}> 
                   <p>Here is today's expert tips from our astroguru Mr. Trivedi Ravi. For more tips please contact on 9574744469</p>
                   <span>
                     <img src="https://trivediravi.com/wp-content/themes/astro/images/experttips/03.jpg" alt="expertips" title="expertips" style={{ width: "100%", height: "350px" }} />
